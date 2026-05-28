@@ -1,10 +1,12 @@
 from selenium.webdriver.common.by import By
 
+from Features.pages.BasePage import BasePage
 
-class AccountPage:
+
+class AccountPage(BasePage):
 
     def __init__(self,driver):
-        self.driver =driver
+        super().__init__(driver)
 
     account_information_link_text = "Edit your account information"
 
